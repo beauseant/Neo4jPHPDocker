@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - ./data/neo4jdb:/data
+
+  apachephp:
+    image: apachephp
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./data/html/:/var/www/html      
+    ports:
+      - "80:80"
+

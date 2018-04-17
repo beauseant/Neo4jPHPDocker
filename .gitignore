@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+#Datos de la base de datos neo4jdb
+data/neo4jdb/*
+data/neo4jlogs/*
