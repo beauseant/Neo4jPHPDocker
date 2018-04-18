@@ -36,6 +36,8 @@ services:
 
 # Instalación y ejecución
 
+** ANTES DE HACER NADA DEBEMOS CREAR EN EL DIRECTORIO data el subdirectorio neo4jdb ** En data debemos tener un subdirectorio llamado html y otro llamado neo4jdb
+
 ## Instalación de docker:
 
 - cd containers
